@@ -28,4 +28,14 @@ $ export FLASK_ENV=development
 ## Data Schema
 ---
 
-추가
+### User
+```
+{
+    _id:
+    uid:
+    email:
+    token:
+    nickname:
+    photo:
+}
+```

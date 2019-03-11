@@ -31,111 +31,70 @@ $ export FLASK_ENV=development
 ### User
 ```
 {
-    _id:
-    uid:
-    email:
-    token:
-    nickname:
-    photo:
+    _id: <UserID>,
+    uid: <type: str>,
+    email: <type: str>,
+    token: <type: str>,
+    nickname: <type: str>,
+    photo: <type: str>,
+    device_key: <type: str>
 }
 ```
-
 ### Idol
 ```
 {
-    _id:
-    idol_name:
+    _id: <IdolID>,
+    idol_name: <type: str>,
+    idol_img: <type: str>
 }
 ```
-
-### Schedule
-```
-{
-    _id:
-    date:
-    regi_time:
-    sc_name:
-    sc_info:
-    idol_id:
-}
-```
-
-### Post
-```
-{
-    _id:
-    body:
-    time:
-    user_id:
-    post_list_id:
-}
-```
-
-### PostList
-```
-{
-    _id:
-    post_type_num:
-    title_name:
-}
-```
-
 ### Comment
 ```
 {
-    _id:
-    body:
-    time:
-    post_id:
-    schedule_id:
-    news_feed_id:
-    video_feed_id:
-    newstab_id:
-    user_id:
+    _id: <CommentID>,
+    time: <type: datetime>,
+    bool: <type: bool>
+    body: <type: str>
+}
+```
+### Badge
+```
+{
+    _id: <BadgeID>,
+    bad_name: <type: str>,
+    bad_type: <type: int>
+}
+```
+### Schedule
+```
+{
+    _id: <ScheduleID>,
+    date: <type: datetime>,
+    sc_name: <type: str>,
+    sc_info: <type: str>,
+    sc_location: <type: str>,
 }
 ```
 
-###CoComment
+### Feed
 ```
 {
-    _id:
-    body:
-    time:
-    comment_id:
-    user_id:
+    _id: <FeedID>,
+    nov: <type: bool>
+    th_title: <type: str>,
+    th_photo: <type: str>,
+    th_url: <type: str>,
+    th_info: <type: str>,
 }
 ```
-
-### PostPhoto
+### Newstab
 ```
 {
-    _id:
-    photo_user_id:
-    photo_post_id:
-    photo_url:
-}
-```
-
-### FeedNews
-```
-{
-    _id:
-    thumbnail_photo:
-    thumbnail_url:
-    thumbnail_title:
-    thumbnail_info:
-    schedule_id:
-}
-```
-
-### FeedVideo
-```
-{
-    _id:
-    thumbnail_photo:
-    thumbnail_url:
-    thumbnail_title:
-    thumbnail_info:
-    schedule_id:
+    _id: <NewsID>,
+    pr_title: <type: str>,
+    pr_photo: <type: str>,
+    pr_url: <type: str>,
+    pr_name: <type: str>,
+    date: <type: datetime>
 }
 ```

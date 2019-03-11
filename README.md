@@ -39,3 +39,103 @@ $ export FLASK_ENV=development
     photo:
 }
 ```
+
+### Idol
+```
+{
+    _id:
+    idol_name:
+}
+```
+
+### Schedule
+```
+{
+    _id:
+    date:
+    regi_time:
+    sc_name:
+    sc_info:
+    idol_id:
+}
+```
+
+### Post
+```
+{
+    _id:
+    body:
+    time:
+    user_id:
+    post_list_id:
+}
+```
+
+### PostList
+```
+{
+    _id:
+    post_type_num:
+    title_name:
+}
+```
+
+### Comment
+```
+{
+    _id:
+    body:
+    time:
+    post_id:
+    schedule_id:
+    news_feed_id:
+    video_feed_id:
+    newstab_id:
+    user_id:
+}
+```
+
+###CoComment
+```
+{
+    _id:
+    body:
+    time:
+    comment_id:
+    user_id:
+}
+```
+
+### PostPhoto
+```
+{
+    _id:
+    photo_user_id:
+    photo_post_id:
+    photo_url:
+}
+```
+
+### FeedNews
+```
+{
+    _id:
+    thumbnail_photo:
+    thumbnail_url:
+    thumbnail_title:
+    thumbnail_info:
+    schedule_id:
+}
+```
+
+### FeedVideo
+```
+{
+    _id:
+    thumbnail_photo:
+    thumbnail_url:
+    thumbnail_title:
+    thumbnail_info:
+    schedule_id:
+}
+```

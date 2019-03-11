@@ -107,9 +107,3 @@ $ export FLASK_ENV=development
     title_name: <type: str>
 }
 ```
-### Follow
-```
-{
-
-}
-```

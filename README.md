@@ -32,6 +32,7 @@ $ export FLASK_ENV=development
 ```
 {
     _id: <UserID>,
+    is_admin: <type:bool>,
     uid: <type: str>,
     email: <type: str>,
     token: <type: str>,
@@ -96,5 +97,19 @@ $ export FLASK_ENV=development
     pr_url: <type: str>,
     pr_name: <type: str>,
     date: <type: datetime>
+}
+```
+### Postlist
+```
+{
+    _id: <PostlistID>,
+    type_num: <type: int>,
+    title_name: <type: str>
+}
+```
+### Follow
+```
+{
+
 }
 ```

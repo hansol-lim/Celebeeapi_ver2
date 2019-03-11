@@ -1,0 +1,1 @@
+@app.route('/idol', methods=['GET'])

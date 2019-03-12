@@ -49,6 +49,15 @@ $ export FLASK_ENV=development
     idol_img: <type: str>
 }
 ```
+### Post
+```
+{
+    _id: <PostID>,
+    body: <type: str>,
+    time: <type: datetime>,
+    type_num: <type: int>
+}
+```
 ### Comment
 ```
 {
@@ -97,13 +106,5 @@ $ export FLASK_ENV=development
     pr_url: <type: str>,
     pr_name: <type: str>,
     date: <type: datetime>
-}
-```
-### Postlist
-```
-{
-    _id: <PostlistID>,
-    type_num: <type: int>,
-    title_name: <type: str>
 }
 ```
